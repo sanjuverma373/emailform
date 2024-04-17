@@ -76,6 +76,7 @@ const Emailform = () => {
   };
   return (
     < >
+    <h1 className=' font-bold text-4xl text-center pb-5'>Email js with Form validation</h1>
       <form className="registration-form mt-5 " onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name:</label>

@@ -27,16 +27,19 @@ export const ContactUs = () => {
     };
 
     return (
-        <div className='flex items-center justify-center w-full pb-10'>
-            <form ref={form} className='flex flex-col' onSubmit={sendEmail}>
-                <label>Name</label>
-                <input className='px-3 py-2' type="text" name="user_name" id='name' />
-                <label>Email</label>
-                <input className='px-3 py-2' type="email" name="user_email" id='email' />
-                <label>Message</label>
-                <textarea className='px-3 py-2 border border-black rounded-lg outline-none' name="message" id='text' />
-                <input className='py-2 mt-10 text-white duration-300 bg-blue-400 border-0 cursor-pointer hover:bg-blue-500' type="submit" value="Send" />
-            </form>
+        <div>
+            <h1 className=' font-bold text-4xl text-center pb-5'>Email js</h1>
+            <div className='flex items-center justify-center w-full pb-10'>
+                <form ref={form} className='flex flex-col' onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input className='px-3 py-2' type="text" name="user_name" id='name' />
+                    <label>Email</label>
+                    <input className='px-3 py-2' type="email" name="user_email" id='email' />
+                    <label>Message</label>
+                    <textarea className='px-3 py-2 border border-black rounded-lg outline-none' name="message" id='text' />
+                    <input className='py-2 mt-10 text-white duration-300 bg-blue-400 border-0 cursor-pointer hover:bg-blue-500' type="submit" value="Send" />
+                </form>
+            </div>
         </div>
     );
 };  
